@@ -1,0 +1,24 @@
+{
+  "name": "purescript-multihash",
+  "version": "1.0.0",
+  "description": "",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ydzz/purescript-multihash.git"
+  },
+  "dependencies": {
+    "varint": "^5.0.0"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ydzz/purescript-multihash/issues"
+  },
+  "homepage": "https://github.com/ydzz/purescript-multihash#readme"
+}
