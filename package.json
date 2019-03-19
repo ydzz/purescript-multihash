@@ -13,7 +13,8 @@
     "url": "git+https://github.com/ydzz/purescript-multihash.git"
   },
   "dependencies": {
-    "varint": "^5.0.0"
+    "varint": "^5.0.0",
+    "bs58": "^4.0.1"
   },
   "author": "",
   "license": "MIT",

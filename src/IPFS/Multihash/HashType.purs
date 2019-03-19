@@ -1,5 +1,8 @@
 module IPFS.Multihash.HashType(fromCode,toCode,HashType(..),defLength) where
 import Data.Maybe
+import Prelude
+
+import Data.Generic.Rep (class Generic)
 
 data HashType = ID | SHA1 | SHA2_256 | SHA2_512
  | DBL_SHA2_256 | SHA3_224 | SHA3_256 | SHA3_384
@@ -86,6 +89,8 @@ data HashType = ID | SHA1 | SHA2_256 | SHA2_512
  | SKEIN1024_968 | SKEIN1024_976 | SKEIN1024_984 | SKEIN1024_992
  | SKEIN1024_1000 | SKEIN1024_1008 | SKEIN1024_1016 | SKEIN1024_1024
 
+instance showHashType :: Show HashType where
+  show a = "HashType(" <> (show $ toCode a) <> ")"
 
 
 toCode::HashType -> Int

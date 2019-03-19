@@ -8,7 +8,7 @@ import Node.Buffer (Buffer)
 import Partial.Unsafe (unsafePartial)
 import Prelude (($))
 
-foreign import encode :: Int -> Buffer
+foreign import encode :: Int -> Array Int
 
 foreign import decode_ :: Buffer -> Int -> Array Int
 
