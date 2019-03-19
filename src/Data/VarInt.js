@@ -6,8 +6,8 @@ exports.encode = function(x) {
     return varint.encode(x)
 }
 
-exports.decode = function(b) {
+exports.decode_ = function(b) {
     return function(n){
-        return varint.decode(b,n)
+        return [varint.decode(b,n),varint.decode.bytes]
     }
 }

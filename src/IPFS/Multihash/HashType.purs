@@ -1,4 +1,4 @@
-module IPFS.Multihash.HashType(toCode,HashType(..)) where
+module IPFS.Multihash.HashType(fromCode,toCode,HashType(..),defLength) where
 import Data.Maybe
 
 data HashType = ID | SHA1 | SHA2_256 | SHA2_512
